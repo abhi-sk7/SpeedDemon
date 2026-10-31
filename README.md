@@ -13,7 +13,7 @@ Raw logs are hard to scan when an incident spans many endpoints and hours. This 
 
 ## Run the web workbench
 
-Open `app/index.html` in a current browser. Drop in an ASCII, space-delimited request log with timestamp, method, endpoint, status and latency in microseconds. Analysis runs in a Web Worker to keep the interface responsive. The first 1,000 output groups are previewed; the download contains every group.
+Open `app/index.html` in a current browser. Drop in an ASCII, space-delimited request log with timestamp, method, endpoint, status and latency in microseconds. Analysis runs in a Web Worker to keep the interface responsive. The dashboard charts hourly traffic and 5xx rates, flags notable groups, and supports endpoint search, hour filtering, error-only filtering, sorting, pagination, exact summary export, and filtered CSV export.
 
 The analyzer expects the Speed Demon Track A log shape and fixed 72-hour date span. For other formats or date ranges, adapt the timestamp and parser rules before using it.
 
@@ -24,4 +24,5 @@ See [`track-a/README.md`](track-a/README.md) for the offline Docker build and ex
 ## License
 
 MIT. See [`LICENSE`](LICENSE).
+
 
